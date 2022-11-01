@@ -5,8 +5,8 @@ import ShareImage from "../assets/img/desktop-share.svg"
 const Header = () => {
   return (
     <div className='header'>
-        <div className='header-items'>
         <img src={ShareImage} alt="share" id='share' />
+        <div className='header-items'>
         <img src={ProfileImage} alt="profileImg" id='profile__img' />
      <p id='twitter'>rissamo2</p>
         </div>
