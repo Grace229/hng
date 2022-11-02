@@ -1,4 +1,7 @@
 import React from 'react'
+import SlackIcon from '../assets/img/slack.svg'
+import GithubIcon from '../assets/img/Social icon.svg'
+
 
 const Link = () => {
   return (
@@ -10,11 +13,10 @@ const Link = () => {
         Background Check for Coders
         </a>
         <a href="https://books.zuri.team/design-rules" type='button' id='book__design'>Design Books</a>
-
-       
-
-        
-
+        <div className='social'>
+            <img src={SlackIcon} alt="" />
+            <img src={GithubIcon} alt="" />
+        </div>
 
     </div>
   )
