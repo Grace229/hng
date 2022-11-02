@@ -10,6 +10,9 @@
   right: 30%;
   top: 2%;
 }
+#share1{
+  display: none;
+}
 
 body {
   width: 80%;
@@ -30,13 +33,16 @@ body {
   font-size: 20px;
   line-height: 30px;
 }
+#slack{
+  visibility: hidden;;
+}
 
 .link-container {
   width: 90%;
   margin: 0 auto 60px auto;
 }
 
-a {
+.link{
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -54,11 +60,17 @@ a {
   line-height: 28px;
   color: #101828;
 }
+.social{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 60px 0;
+}
+.slack{
+  margin-right: 20px;
+}
 footer{
   height: 64px;
   border-top: 1px solid #EAECF0;
-
-
 }
 .footer{
   margin-top: 20px;
@@ -72,5 +84,34 @@ font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 color: #667085;
-
+}
+@media screen and (max-width: 600px) {
+  #share {
+   display: none;
+  }
+  #share1{
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+  }
+  body{
+    width: 100%;
+  }
+  footer{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer{
+    margin-top: 20px;
+    display: flex;
+   flex-direction: column;
+  }
+  .footer img{
+    width: 120px;
+  }
+  .footer p{
+  font-size: 14px;
+  line-height: 20px;
+  }
 }
